@@ -1,6 +1,9 @@
-<h1 align="center">Dotfiles — Global Codespaces Bootstrap</h1>
+<h1 align="center">Dotfiles — Global Codespaces Bootstrap :octocat: :octocat:</h1>
 
-> Konfigurasi lingkungan pengembangan yang berjalan **otomatis** di setiap GitHub Codespace, tanpa perlu pengaturan berulang per-repositori.
+Konfigurasi lingkungan pengembangan yang berjalan **otomatis** di setiap GitHub Codespace, tanpa perlu pengaturan berulang per-repositori.
+
+> [!TIP]
+> <mark>Baca baca disini</mark> https://docs.github.com/en/codespaces/setting-your-user-preferences/personalizing-github-codespaces-for-your-account#dotfiles
 
 ---
 
@@ -38,6 +41,7 @@ dotfiles/
 
 ### Langkah 1 — Fork atau Clone ke Akun Sendiri
 
+> [!NOTE]
 > ⚠️ **Wajib:** Dotfiles harus berada di repositori milik akun GitHub Anda sendiri. GitHub Codespaces hanya akan mengeksekusi dotfiles dari repositori yang dimiliki oleh akun yang sedang login.
 
 **Opsi A — Fork (direkomendasikan, lebih cepat):**
@@ -72,23 +76,26 @@ git push -u origin main
 4. Centang **✅ Automatically install dotfiles**
 5. Klik **Save**
 
+<img width="766" height="154" alt="image" src="https://github.com/user-attachments/assets/cb9eef8e-48c1-489f-aa17-0366bde5e4d1" />
+
 ---
 
 ### Langkah 3 — Buat Codespace Baru
 
 Buat Codespace baru dari repositori manapun. Script `install.sh` akan berjalan otomatis di background saat startup, melakukan:
 
-- ✅ Instalasi dan aktivasi Node.js 20 via `nvm`/`nvs`
-- ✅ Penghapusan cache extension VS Code yang berpotensi korup
-- ✅ Symlink semua file konfigurasi ke direktori `$HOME`
-- ✅ Konfigurasi npm dengan timeout yang lebih panjang
-- ✅ Pembersihan environment variable proxy yang mengganggu
+- [x] Instalasi dan aktivasi Node.js 20 via `nvm`/`nvs`
+- [x] Penghapusan cache extension VS Code yang berpotensi korup
+- [x] Symlink semua file konfigurasi ke direktori `$HOME`
+- [x] Konfigurasi npm dengan timeout yang lebih panjang
+- [x] Pembersihan environment variable proxy yang mengganggu
 
 > Untuk Codespace yang **sudah ada**: tekan `Ctrl+Shift+P` → jalankan `Codespaces: Rebuild Container`
 
 ---
 
-## ❓ FAQ
+> [!IMPORTANT]
+> ❓ FAQ
 
 <details>
 <summary><strong>Apakah aman dijadikan repositori publik?</strong></summary>
@@ -142,6 +149,13 @@ Jika hasilnya sesuai, instalasi dotfiles berhasil.
 | GitHub Codespaces (Custom Image) | ✅ Didukung |
 | Dev Container lokal (VS Code) | ✅ Didukung sebagian |
 | Mesin lokal (Linux/macOS) | ⚠️ Dapat digunakan manual |
+
+## Check Manual di codespace
+```
+node -v     # harus v20.x.x
+npm -v      # harus v10.x.x
+cat ~/.nvmrc  # harus isi "20"
+```
 
 ---
 
