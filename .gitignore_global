@@ -1,0 +1,30 @@
+# === OS ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === Editor ===
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# === Env ===
+.env
+.env.local
+.env.*.local
+
+# === Node ===
+node_modules/
+.npm
+
+# === Build ===
+dist/
+build/
+.next/
+out/
