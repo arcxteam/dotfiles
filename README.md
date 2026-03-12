@@ -1,5 +1,14 @@
 <h1 align="center">Dotfiles — Global Codespaces Bootstrap :octocat: :octocat:</h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-20.x-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 20" />
+  <img src="https://img.shields.io/badge/npm-10.x-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm 10" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/Zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white" alt="Zsh" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub_Codespaces-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Codespaces" />
+</p>
+
 Konfigurasi lingkungan pengembangan yang berjalan **otomatis** di setiap GitHub Codespace, tanpa perlu pengaturan berulang per-repositori.
 
 > [!TIP]
